@@ -1,0 +1,41 @@
+#status {
+    position: fixed;
+    left: 0;
+}
+
+#status.hide {
+    display: none;
+}
+
+#status .hud {
+    margin: 5px 10px;
+}
+
+#status .hud__title {
+    font-size: 12px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+#status .hud__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 250px;
+}
+
+#status .hud__list li {
+    flex: 0 0 30px;
+    font-size: 25px;
+}
+
+#status .hud__list .ion-ios-heart {
+    color: #d63031;
+}
+
+#status .hud__list .ion-ios-checkbox {
+    color: #0984e3;
+}

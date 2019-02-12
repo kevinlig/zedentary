@@ -1,0 +1,27 @@
+{
+  "name": "zedentary-ui",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode=development",
+    "build-prod": "webpack --mode=production",
+    "start": "webpack-dev-server --mode=development"
+  },
+  "author": "Kevin Li",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "css-loader": "^2.1.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "dependencies": {
+    "babylonjs": "^3.3.0",
+    "babylonjs-loaders": "^3.3.0",
+    "lodash": "^4.17.11",
+    "mobx": "^5.9.0"
+  }
+}

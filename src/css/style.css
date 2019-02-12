@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Poppins');
+html, body {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #2d3436;
+}
+
+#app, #render {
+    width: 100%;
+    height: 100%;
+    touch-action: none;
+}
+
+@import "./ui/index.css";
