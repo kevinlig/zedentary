@@ -15,4 +15,12 @@ html, body {
     touch-action: none;
 }
 
+#render {
+    z-index: 1;
+}
+
+#ui {
+    z-index: 2;
+}
+
 @import "./ui/index.css";

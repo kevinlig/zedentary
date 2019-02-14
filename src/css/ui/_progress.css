@@ -1,0 +1,14 @@
+.progress {
+    position: relative;
+    border: 2px solid #2d3436;
+    height: 15px;
+}
+
+.progress__bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #636e72;
+    height: 100%;
+    width: 100%;
+}

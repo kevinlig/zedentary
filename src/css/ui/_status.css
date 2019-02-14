@@ -3,10 +3,6 @@
     left: 0;
 }
 
-#status.hide {
-    display: none;
-}
-
 #status .hud {
     margin: 5px 10px;
 }

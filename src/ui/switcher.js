@@ -7,13 +7,13 @@ const icons = {
 };
 
 const button = document.getElementById('switcher');
-const status = document.getElementById('status');
+const gameElements = document.querySelectorAll('.game');
 
 // set the button icon based on the current game mode
 observe(GameStore, 'mode', (change) => {
     if (change.type === 'update') {
         setIcon();
-        toggleStatus();
+        gameElements.forEach(toggleStatus);
     }
 });
 
@@ -39,15 +39,15 @@ function setIcon() {
     }
 }
 
-function toggleStatus() {
+function toggleStatus(el) {
     const mode = GameStore.mode;
     if (mode === 'joke') {
-        status.classList.add('hide');
+        el.classList.add('hide');
     }
     else {
-        status.classList.remove('hide');
+        el.classList.remove('hide');
     }
 }
 
 setIcon();
-toggleStatus();
+gameElements.forEach(toggleStatus);

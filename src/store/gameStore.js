@@ -19,8 +19,8 @@ class GameStore {
         this.loaded = loaded;
     }
 
-    setTickets(tickets) {
-        this.tickets = tickets;
+    addTicket() {
+        this.tickets++;
     }
 
     setLives(lives) {
@@ -46,7 +46,7 @@ decorate(GameStore, {
     tickets: observable,
     setPosition: action,
     setLoaded: action,
-    setTickets: action,
+    addTicket: action,
     setLives: action,
     startGame: action,
     startJoke: action
