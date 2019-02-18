@@ -275,9 +275,16 @@ export default class GameScene {
         });
 
         observe(this.store, 'mode', (change) => {
-            if (change.type === 'update' && this.store.mode === 'game') {
+            if (change.type === 'update') {
                 // kill any emitters
                 this._internalMeshes.emitter_coin_down.stop();
+                this._internalMeshes.emitter_coin_up.stop();
+            }
+        });
+
+        observe(this.store, 'lives', (change) => {
+            if (change.type === 'update' && this.store.lives === 0 && this.store.mode === 'game') {
+                this._internalMeshes.emitter_coin_down.start();
                 this._internalMeshes.emitter_coin_up.stop();
             }
         });

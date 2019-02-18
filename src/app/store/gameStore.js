@@ -14,7 +14,9 @@ class GameStore {
 
     setPosition(position, frame) {
         this.position = position;
-        this.frame = frame;
+        if (frame) {
+            this.frame = frame;
+        }
     }
 
     setLoaded(loaded) {
@@ -46,6 +48,7 @@ decorate(GameStore, {
     loaded: observable,
     mode: observable,
     tickets: observable,
+    lives: observable,
     setPosition: action,
     setLoaded: action,
     addTicket: action,

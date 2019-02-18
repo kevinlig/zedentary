@@ -38,6 +38,14 @@
                         </div>
                     </div>
                 </div>
+                <div id="life" class="life game hide">
+                    <div class="life__title">
+                        <i class="icon ion-ios-heart"></i>
+                    </div>
+                    <div id="life-progress" class="life__progress progress">
+                        <div class="progress__bar"></div>
+                    </div>
+                </div>
             </div>
             <canvas id="render"></canvas>
             <div id="qr-modal" class="hide">
@@ -45,6 +53,12 @@
                 <div>
                     Scan this QR code on your phone to use it as a controller.
                 </div>
+            </div>
+            <div id="death-modal" class="hide">
+                <div class="death__title">
+                    You are dead
+                </div>
+                <p id="death-summary"></p>
             </div>
         </div>
         <script src="js/app.js" type="text/javascript"></script>

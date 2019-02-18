@@ -30,7 +30,7 @@ observe(GameStore, 'position', (change) => {
 });
 
 function makeProgress(currentFrame) {
-    if (GameStore.mode !== 'game' || GameStore.position !== 'sit') {
+    if (GameStore.mode !== 'game' || GameStore.position !== 'sit' || GameStore.lives <= 0) {
         // we've ended the game, so stop looping
         return;
     }
