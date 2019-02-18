@@ -1,9 +1,0 @@
-.hide {
-    display: none;
-}
-
-@import "./_switcher.css";
-@import "./_status.css";
-@import "./_lives.css";
-@import "./_tickets.css";
-@import "./_progress.css";

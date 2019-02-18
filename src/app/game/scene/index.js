@@ -41,17 +41,6 @@ export default class GameScene {
             .then(() => {
                 // we finished loading
                 this.store.setLoaded(true);
-
-                window.startSit = () => {
-                    console.log('sit');
-                    this._transitionState('sit');
-                }
-
-                window.startStand = () => {
-                    console.log('stand');
-                    this._transitionState('stand');
-                }
-
                 this._attachObservers();
             })
             .catch((err) => {
@@ -282,6 +271,14 @@ export default class GameScene {
                         this._internalMeshes.emitter_coin_up.stop();
                     }
                 }
+            }
+        });
+
+        observe(this.store, 'mode', (change) => {
+            if (change.type === 'update' && this.store.mode === 'game') {
+                // kill any emitters
+                this._internalMeshes.emitter_coin_down.stop();
+                this._internalMeshes.emitter_coin_up.stop();
             }
         });
     }

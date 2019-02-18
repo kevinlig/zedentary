@@ -1,7 +1,9 @@
+import uuid from 'uuid/v4';
 import { observable, action, decorate } from 'mobx';
 
 class GameStore {
     constructor() {
+        this.session = uuid();
         this.position = 'sit';
         this.frame = -1;
         this.loaded = false;

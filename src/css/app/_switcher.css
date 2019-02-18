@@ -1,6 +1,12 @@
-#switcher {
+.mode-buttons {
     position: fixed;
     right: 0;
+    display: flex;
+    width: 90px;
+}
+
+.mode-buttons button {
+    flex: 0 0 auto;
     padding: 5px 10px;
     border: none;
     font: inherit;

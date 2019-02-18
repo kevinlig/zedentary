@@ -1,0 +1,25 @@
+#training {
+    padding: 25px;
+}
+
+#training button {
+    border: none;
+    font: inherit;
+    color: #ffffff;
+    background-color: #0984e3;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+
+    margin: 20px 0;
+}
+
+#training button[disabled] {
+    opacity: 0.3;
+    cursor: none;
+}
+
+#training .restore {
+    margin: 20px 0;
+    border-bottom: 1px solid black;
+}

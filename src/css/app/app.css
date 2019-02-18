@@ -23,4 +23,13 @@ html, body {
     z-index: 2;
 }
 
-@import "./ui/index.css";
+.hide {
+    display: none !important;
+}
+
+@import "./_switcher.css";
+@import "./_status.css";
+@import "./_lives.css";
+@import "./_tickets.css";
+@import "./_progress.css";
+@import "./_qrmodal.css";

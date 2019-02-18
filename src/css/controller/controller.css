@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Poppins');
+
+html, body {
+    font-family: 'Poppins', sans-serif;
+    color: #2d3436;
+}
+
+
+.hide {
+    display: none;
+}
+
+.subheader {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size: 18px;
+}
+
+@import "./_training.css";
+@import "./_controller.css";

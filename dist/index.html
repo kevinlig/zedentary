@@ -3,7 +3,7 @@
     <head>
         <title>Zedentary</title>
         <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/app.css" />
     </head>
     <body>
         <div id="app">
@@ -23,7 +23,10 @@
                         </ul>
                     </div>
                 </div>
-                <button id="switcher"></button>
+                <div class="mode-buttons">
+                    <button id="barcode" class="ion-ios-barcode"></button>
+                    <button id="switcher"></button>
+                </div>
                 <div id="ticket" class="ticket game hide">
                     <div class="ticket__header">
                         <i class="icon ion-ios-checkbox"></i>
@@ -37,6 +40,12 @@
                 </div>
             </div>
             <canvas id="render"></canvas>
+            <div id="qr-modal" class="hide">
+                <canvas id="qr-code"></canvas>
+                <div>
+                    Scan this QR code on your phone to use it as a controller.
+                </div>
+            </div>
         </div>
         <script src="js/app.js" type="text/javascript"></script>
     </body>
