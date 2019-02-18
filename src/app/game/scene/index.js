@@ -262,7 +262,7 @@ export default class GameScene {
                 this._lastPosition = this.store.position;
 
                 if (this.store.mode === 'joke') {
-                    if (this.store.position === 'sit') {
+                    if (this.store.position === 'stand') {
                         this._internalMeshes.emitter_coin_down.stop();
                         this._internalMeshes.emitter_coin_up.start();
                     }
