@@ -34,7 +34,7 @@ export default class SocketManger {
             const frame = data && data.length >= 2 && parseInt(data[1], 10);
             const session = data && data.length >= 3 && data[2];
 
-            if (session && this.store.session && session !== this.store.session) {
+            if (!session || (session && this.store.session && session !== this.store.session)) {
                 // session mismatch
                 return;
             }

@@ -1,4 +1,4 @@
-import { observe } from 'mobx';
+import { observe, autorun } from 'mobx';
 import GameStore from '../store/gameStore';
 
 const titleEl = document.getElementById('ticket-title');
@@ -27,6 +27,11 @@ observe(GameStore, 'position', (change) => {
             pauseTicket();
         }
     }
+});
+
+autorun(() => {
+    const formattedCount = `${GameStore.tickets + 1}`.padStart(3, 0);
+    titleEl.textContent = `TIX-${formattedCount}`;
 });
 
 function makeProgress(currentFrame) {
@@ -64,8 +69,6 @@ function makeProgress(currentFrame) {
 
 function startTicket() {
     ticketProgress = 0;
-    const formattedCount = `${GameStore.tickets + 1}`.padStart(3, 0);
-    titleEl.textContent = `TIX-${formattedCount}`;
     startFrame = null;
     startingProgress = 0;
     window.requestAnimationFrame(makeProgress);

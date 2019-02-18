@@ -3,7 +3,7 @@
     top: 150px;
     left: calc(50% - 90px);
 
-    width: 180px;
+    width: 200px;
 
     background-color: #f5f6fa;
     box-shadow: -2px 2px 10px 1px rgba(0,0,0,0.75);
@@ -11,11 +11,23 @@
 }
 
 #qr-modal canvas {
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
 }
 
 #qr-modal div {
     padding: 10px;
     font-size: 12px;
+}
+
+#qr-modal button {
+    border: none;
+    font: inherit;
+    color: #ffffff;
+    background-color: #0984e3;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+
+    margin: 20px;
 }

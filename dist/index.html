@@ -53,12 +53,47 @@
                 <div>
                     Scan this QR code on your phone to use it as a controller.
                 </div>
+                <button id="qr-close">
+                    Close
+                </button>
             </div>
             <div id="death-modal" class="hide">
                 <div class="death__title">
                     You are dead
                 </div>
                 <p id="death-summary"></p>
+                <button id="death-restart">
+                    Try Again
+                </button>
+            </div>
+            <div id="intro-modal">
+                <div class="intro__title">
+                    Zedentary
+                </div>
+                <div class="intro__subtitle">
+                    A sit/stand thing
+                </div>
+                <div class="intro__content">
+                    <div class="intro__section">
+                        Attach a controller
+                    </div>
+                    <p>
+                        Use your phone to control your avatar. Pair your phone with the game by clicking the <i class="ion-ios-barcode"></i> icon and scanning the QR code. Follow the prompts on your phone to train the app to detect your standing/sitting position. If you've used the app before, you can re-use a previous model.
+                    </p>
+
+                    <div class="intro__section">
+                        Modes
+                    </div>
+                    <p>
+                        You can use monitoring mode where your avatar simply reflects your current position by clicking the <i class="ion-ios-body"></i> icon.
+                    </p>
+                    <p>
+                        You can use game mode to play a game where you try to close as many tickets as possible without dying by clicking the <i class="ion-logo-game-controller-b"></i> button. You can only make progress on tickets while sitting, but sitting will also reduce your life.
+                    </p>
+                </div>
+                <button id="intro-start">
+                    Start
+                </button>
             </div>
         </div>
         <script src="js/app.js" type="text/javascript"></script>

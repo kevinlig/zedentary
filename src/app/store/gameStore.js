@@ -43,6 +43,7 @@ class GameStore {
 }
 
 decorate(GameStore, {
+    session: observable,
     position: observable,
     frame: observable,
     loaded: observable,
@@ -55,7 +56,6 @@ decorate(GameStore, {
     setLives: action,
     startGame: action,
     startJoke: action
-
 });
 
 const instance = new GameStore();

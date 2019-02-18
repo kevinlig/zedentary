@@ -27,6 +27,7 @@ html, body {
     display: none !important;
 }
 
+@import "./_intromodal.css";
 @import "./_switcher.css";
 @import "./_status.css";
 @import "./_lives.css";

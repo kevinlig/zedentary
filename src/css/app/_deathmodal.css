@@ -19,3 +19,15 @@
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
 }
+
+#death-modal button {
+    border: none;
+    font: inherit;
+    color: #ffffff;
+    background-color: #0984e3;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+
+    margin: 20px 0 0 0;
+}

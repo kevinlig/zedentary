@@ -4,6 +4,7 @@ import GameStore from '../store/gameStore';
 const button = document.getElementById('barcode');
 const modal = document.getElementById('qr-modal');
 const canvas = document.getElementById('qr-code');
+const closeButton = document.getElementById('qr-close');
 
 let isShowing = false;
 
@@ -15,6 +16,8 @@ button.addEventListener('click', () => {
         showModal();
     }
 });
+
+closeButton.addEventListener('click', hideModal);
 
 function hideModal() {
     isShowing = false;

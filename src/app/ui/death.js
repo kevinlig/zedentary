@@ -3,6 +3,7 @@ import GameStore from '../store/gameStore';
 
 const modal = document.querySelector('#death-modal');
 const summary = document.querySelector('#death-summary');
+const button = document.querySelector('#death-restart');
 
 observe(GameStore, 'lives', (change) => {
     if (change.type === 'update') {
@@ -22,6 +23,11 @@ observe(GameStore, 'mode', (change) => {
     }
 });
 
+button.addEventListener('click', () => {
+    modal.classList.add('hide');
+    GameStore.startJoke();
+    GameStore.startGame();
+});
 
 function writeSummary() {
     const ticketCount = GameStore.tickets;

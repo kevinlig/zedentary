@@ -1,3 +1,4 @@
+import './intro';
 import  './switcher';
 import './status';
 import './ticket';
